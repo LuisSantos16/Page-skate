@@ -268,8 +268,13 @@
 }
 
 @media only screen and (max-width:430px){
+    
     .conta_welcome figcaption{
         width: 100%;
+    }
+    .conta_welcome figcaption p{
+        font-size: 12px;
+        padding: 0px 10px;
     }
     .conta_about,.conta_event{
         padding: 80px 15px;
