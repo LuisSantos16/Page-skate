@@ -1,0 +1,73 @@
+
+.container_footer{
+    position: relative;
+    width: 100%;
+    padding: 100px 0px;
+    background: linear-gradient(rgba(0, 0, 0, 0.822),rgba(0, 0, 0, 0.562),rgba(0, 0, 0, 0.932)),url(../img/bg-map.jpeg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.mapa{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.616);
+}
+
+.text_mapa{
+    line-height: 35px;
+}
+
+.text_mapa-social{
+    margin-top: 20px;
+}
+
+.text_mapa-social a{
+    color: rgba(255, 255, 255, 0.616);
+    margin: 0px 10px;
+    font-size: 20px;
+}
+
+footer nav{
+    background: black;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 15px;
+}
+
+footer nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+@media only screen and (max-width:1150px){
+    .container_footer{
+        padding: 20px 0px;
+    }
+    .mapa{
+        font-size: 15px;
+    }
+
+    footer nav,footer nav a{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width:650px){
+
+    footer .text_mapa h2,.text_mapa-social a{
+        font-size: 15px;
+    }
+    footer .text_mapa p{
+        font-size: 12px;
+    }
+}

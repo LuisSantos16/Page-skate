@@ -1,0 +1,87 @@
+aside{
+    background: linear-gradient(rgba(2, 31, 95, 0.822),rgba(2, 42, 95, 0.801)), url(../img/bg-news.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+aside h2{
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-bottom: 40px;
+    color: white;
+    font-size: 35px;
+}
+
+.container_news{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.conta-news{
+    width: 350px;
+    text-align: center;
+    color: white;
+    margin: 0px 20px;
+}
+
+.conta-news span{
+    display: block;
+    margin: auto;
+    width: 100px;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.bgred{ background-color: rgb(221, 38, 38);} .bgblue{background-color: rgb(235, 158, 42);} .bgyellow{background-color: rgb(38, 154, 221);}
+
+
+.conta-news h3{
+    margin: 40px 0px 20px 0px;
+}
+
+.conta-news p{
+    line-height: 25px;
+}
+
+aside button{
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+    background-color: rgba(0, 0, 0, 0.726);
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    transition: 0.5s all;
+}
+
+aside button a{
+    padding: 40px;
+    color: white;
+}
+
+aside button:hover{
+    background-color: rgba(19, 19, 54, 0.842);
+    transition: 0.5s all;
+}
+
+@media only screen and (max-width:1150px){
+    .conta-news{
+        width: 300px;
+    }
+    .conta-news h3{
+        font-size: 15px;
+    }
+    .conta-news p{
+        font-size: 12px;
+    }
+}

@@ -18,6 +18,10 @@ header{
     position: relative;
 }
 
+#lista-barid{
+    display: none;
+}
+
 header .menu{
     text-align: center;
     background-color: rgba(62, 49, 133, 0.205);
@@ -32,6 +36,7 @@ header .menu a{
     font-weight: bold;
     letter-spacing: 1;
     font-size: 15px;
+    text-decoration: none;
 }
 
 header .menu a:hover{background-color: rgba(0, 0, 0, 0.377);}
@@ -45,4 +50,77 @@ header span{
     font-size: 60px;
     text-align: center;
     text-transform: uppercase;
+}
+
+@media only screen and (max-width:1050px){
+
+    header span h1{
+        width: 100%;
+        font-size: 80px;
+    }
+
+    #lista-barid{
+        display: block;
+        font-size: 30px;
+        padding: 20px;
+        color: white;
+    }
+
+    .menu{
+        float: none;
+        position: relative;
+        left: -120%;
+        transition: 1s;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu a{
+        padding: 20px;
+        width: 100%;
+    }
+
+    header .menu a:hover{
+        background-color: rgb(255, 255, 255);
+        color: black;
+    }
+
+    .lista-open{
+        left: 100;
+        transition: 1s;
+    }
+
+    #listaid{
+        background-color: rgba(0, 0, 0, 0.774);
+        position: absolute;
+        top: 20px;
+        width: 80%;
+        z-index: 1;
+    }
+
+    @media only screen and (max-width:860px){
+
+        #lista-barid{
+            padding: 10px;
+            font-size: 20px;
+        }
+
+        #listaid{
+            top: 40px;
+            width: 100%;
+        }
+
+        .lista-open{
+            left: 0;
+        }
+    }
+
+    @media only screen and (max-width:670px){
+
+        header span h1{
+            font-size: 30px;
+        }
+
+    }
+
 }

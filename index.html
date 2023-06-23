@@ -5,6 +5,8 @@
 
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/aside.css">
+    <link rel="stylesheet" href="./css/footer.css">
 
     <script src="./js/java.js"></script>
 
@@ -12,17 +14,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 
+    <script src="https://kit.fontawesome.com/d70c66a935.js" crossorigin="anonymous"></script>
+
     <title>Skate Page</title>
 </head>
 <body>
     <header>
-        <nav class="menu">
+        <div class="lista-bar" onclick="llamar()" id="lista-barid">
+            <i class="listabar fa-solid fa-bars"></i>
+        </div>
+
+        <nav class="menu" id="listaid">
             <a href="">Inicio</a>
             <a href="">Nosotros</a>
             <a href="">Instructores</a>
             <a href="">Galeria</a>
             <a href="">Contacto</a>
         </nav>
+
         <span>
             <h1>wake skateboarding</h1>
         </span>
@@ -42,7 +51,7 @@
         <section class="conta_about-event">
             <article class="container_about">
                 <div class="conta_about">
-                    <h2>ABOUT</h2>
+                    <h2>EVENT</h2>
                     <h3>Lorem ipsum dolor sit amet consectetur.</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus voluptas dicta laboriosam, sit eveniet explicabo. Voluptatibus velit, nihil ducimus qui temporibus nostrum optio, labore placeat expedita alias molestiae? Totam, tempora!</p>
                     <h3>excepteur sint occaecat</h3>
@@ -54,7 +63,7 @@
             </article>
             <article class="container_event">
                 <div class="conta_event">
-                    <h2>EVENTS</h2>
+                    <h2>ABOUT</h2>
                     <h3>a deserunt mollit anim id est la</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus voluptas dicta laboriosam, sit eveniet explicabo. Voluptatibus velit, nihil ducimus qui temporibus nostrum optio, labore placeat expedita alias molestiae? Totam, tempora!</p>
                     <h3>sunt in culpa qui offici</h3>
@@ -66,7 +75,106 @@
             </article>
         </section>
 
+        <section>
+            <article class="container_persons">
+                <h2>INSTRUCTORS</h2>
+                <div class="teacher">
+                        <img src="./img/person1.jpeg" alt="">
+                        <h3 class="txt-red">LOREM IPSUM DOLOR SIT AME</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea aperiam itaque tempora eaque unde ex doloremque magnam commodi fugit corrupti perferendis qui quia.</p>
+                    </figcaption>
+                </div>
+                <div class="teacher">
+                        <img src="./img/person2.webp" alt="">
+                        <h3 class="txt-yellow">EXCEPTEUR SINT OCCAE</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea aperiam itaque tempora eaque unde ex doloremque magnam commodi fugit corrupti perferendis qui quia.</p>
+                </div>
+                <div class="teacher">
+                        <img src="./img/person3.webp" alt="">
+                        <h3 class="txt-blue">CAT CUPIDATAT NON PROIDE</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea aperiam itaque tempora eaque unde ex doloremque magnam commodi fugit corrupti perferendis qui quia.</p>
+                </div>
+            </article>
+        </section>
+
+        <section class="container_gallery">
+            <h2>PHOTOS</h2>
+            <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, vitae?</P>
+                <article class="conta_gallery">
+                    <figure class="gallery__item">
+                        <img src="./img/skate1.webp" alt="" class="gallery__img">
+                    </figure>
+                    <figure class="gallery__item">
+                        <img src="./img/skate2.jpeg" alt="" class="gallery__img">
+                    </figure>
+                    <figure class="gallery__item">
+                        <img src="./img/skate3.jpeg" alt="" class="gallery__img">
+                    </figure>
+                    <figure class="gallery__item">
+                        <img src="./img/skate4.jpeg" alt="" class="gallery__img">
+                    </figure>
+                    <figure class="gallery__item">
+                        <img src="./img/skate5.jpeg" alt="" class="gallery__img">
+                    </figure>
+                    <figure class="gallery__item">
+                        <img src="./img/skate6.jpeg" alt="" class="gallery__img">
+                    </figure>
+                    <figure class="gallery__item">
+                        <img src="./img/skate7.jpeg" alt="" class="gallery__img">
+                    </figure>
+                    <figure class="gallery__item">
+                        <img src="./img/skate9.webp" alt="" class="gallery__img">
+                    </figure>
+                </article>
+            <button>
+                <a href="#">SEE ALL</a>
+            </button>
+        </section>
     </main>
+
+    <aside>
+        <h2>NEWS</h2>
+            <div class="container_news">
+                <div class="conta-news">
+                    <span class="bgred">08/02</span>
+                    <h3>LOREM IPSUM DOLOR SIT AMET CONSE CTETUR ADIPISICINGELIT,SED DO.</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque beatae, enim harum cum quo laboriosam fugiat rem aliquam, accusantium inventore quod magnam. Voluptatum ullam culpa laudantium rem nihil tenetur dolorem.</p>
+                </div>
+                <div class="conta-news">
+                    <span class="bgblue">16/05</span>
+                    <h3>EXCEPTEUR SINT OCCAECAT CUPIDATAT NON PROIDENT</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque beatae, enim harum cum quo laboriosam fugiat rem aliquam, accusantium inventore quod magnam. Voluptatum ullam culpa laudantium rem nihil tenetur dolorem.</p>
+                </div>
+                <div class="conta-news">
+                    <span class="bgyellow">20/06</span>
+                    <h3>SUNT IN CULPA QUI OFFICIA DESERUNT MOLLIT ANIM ID EST</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque beatae, enim harum cum quo laboriosam fugiat rem aliquam, accusantium inventore quod magnam. Voluptatum ullam culpa laudantium rem nihil tenetur dolorem.</p>
+                </div>
+            </div>
+        <button>
+            <a href="">SEE ALL</a>
+        </button>
+    </aside>
+
+    <footer>
+        <div class="container_footer">
+            <div class="mapa">
+                <div class="text_mapa">
+                    <h2>Av. lima 2332 , San Isidrio - Lima</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, praesentium!</p>
+                    <div class="text_mapa-social">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+        <nav>
+            <p>Derechos reservados a &copy; <a href="https://www.facebook.com/profile.php?id=100081109827203" target="_blank">Luis M. Santos Rivera</a></p>
+        </nav>
+    </footer>
 
 </body>
 </html>
