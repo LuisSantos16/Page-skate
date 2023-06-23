@@ -8,6 +8,11 @@ body{
     font-family: 'Ubuntu', sans-serif;
 }
 
+.conta_menu{
+    position: fixed;
+    width: 100%;
+}
+
 header{
     background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/bg-header.png);
     background-position: center;
@@ -58,6 +63,15 @@ header span{
         width: 100%;
         font-size: 80px;
     }
+    
+    .conta_menu{
+        background-color: rgba(0, 0, 0, 0.76);
+    }
+
+    header .menu a:hover{
+        background-color: rgba(255, 255, 255, 0.5);
+        color: black;
+    }
 
     #lista-barid{
         display: block;
@@ -80,7 +94,7 @@ header span{
         width: 100%;
     }
 
-    header .menu a:hover{
+    header .menu{
         background-color: rgb(255, 255, 255);
         color: black;
     }
@@ -93,7 +107,7 @@ header span{
     #listaid{
         background-color: rgba(0, 0, 0, 0.774);
         position: absolute;
-        top: 20px;
+        top: 70px;
         width: 80%;
         z-index: 1;
     }

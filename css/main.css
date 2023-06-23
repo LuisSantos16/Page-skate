@@ -119,6 +119,7 @@
     width: 300px;
     text-align: center;
     color: white;
+    margin: 0px 20px;
 }
 
 .container_persons .teacher img{
@@ -248,7 +249,47 @@
 }
 
 @media only screen and (max-width:670px){
+
+    .container_gallery{
+        padding-top: 0px;
+        padding-bottom: 50px;
+    }
+
+    .container_gallery p{
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
     .gallery__item:nth-child(1),.gallery__item:nth-child(2),.gallery__item:nth-child(3),.gallery__item:nth-child(4),.gallery__item:nth-child(5),.gallery__item:nth-child(6),.gallery__item:nth-child(7),.gallery__item:nth-child(8){
         grid-column-start: span 4;
+    }
+}
+
+@media only screen and (max-width:430px){
+    .conta_welcome figcaption{
+        width: 100%;
+    }
+    .conta_about,.conta_event{
+        padding: 80px 15px;
+        text-align: center;
+    }
+    .conta_about p,.conta_event p{
+        text-align: justify;
+    }
+    .container_persons{
+        padding: 0;
+    }
+
+    .container_persons h2{
+        padding-top: 20px;
+    }
+
+    .container_persons .teacher{
+        width: 90%;
+    }
+
+    .container_persons .teacher img{
+        width: 50%;
     }
 }

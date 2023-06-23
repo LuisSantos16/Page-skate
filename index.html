@@ -18,19 +18,23 @@
 
     <title>Skate Page</title>
 </head>
-<body>
-    <header>
-        <div class="lista-bar" onclick="llamar()" id="lista-barid">
-            <i class="listabar fa-solid fa-bars"></i>
-        </div>
 
-        <nav class="menu" id="listaid">
-            <a href="">Inicio</a>
-            <a href="">Nosotros</a>
-            <a href="">Instructores</a>
-            <a href="">Galeria</a>
-            <a href="">Contacto</a>
-        </nav>
+<body>
+    <div id="inicio"></div>
+    <header>
+        <div class="conta_menu">
+            <div class="lista-bar" onclick="llamar()" id="lista-barid">
+                <i class="listabar fa-solid fa-bars"></i>
+            </div>
+    
+            <nav class="menu" id="listaid">
+                <a href="#inicio">Inicio</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#instructor">Instructores</a>
+                <a href="#galeria">Galeria</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
 
         <span>
             <h1>wake skateboarding</h1>
@@ -39,6 +43,7 @@
 
     <main>
         <section>
+            <div id="nosotros"></div>
             <article class="conta_welcome">
                 <figcaption>
                     <h2>Welcome</h2>
@@ -75,6 +80,7 @@
             </article>
         </section>
 
+        <div id="instructor"></div>
         <section>
             <article class="container_persons">
                 <h2>INSTRUCTORS</h2>
@@ -98,6 +104,7 @@
         </section>
 
         <section class="container_gallery">
+            <div id="galeria"></div>
             <h2>PHOTOS</h2>
             <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, vitae?</P>
                 <article class="conta_gallery">
@@ -156,6 +163,7 @@
         </button>
     </aside>
 
+    <div id="contacto"></div>
     <footer>
         <div class="container_footer">
             <div class="mapa">
@@ -175,6 +183,35 @@
             <p>Derechos reservados a &copy; <a href="https://www.facebook.com/profile.php?id=100081109827203" target="_blank">Luis M. Santos Rivera</a></p>
         </nav>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+        
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+        
+            // Store hash
+            var hash = this.hash;
+        
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function(){
+        
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+            });
+            } // End if
+        });
+        });
+        </script>
+
 
 </body>
 </html>
