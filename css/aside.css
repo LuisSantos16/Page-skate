@@ -67,6 +67,7 @@ aside button{
 aside button a{
     padding: 40px;
     color: white;
+    text-decoration: none;
 }
 
 aside button:hover{

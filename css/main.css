@@ -85,6 +85,7 @@
     padding: 20px;
     font-weight: bold;
     transition: 0.5s;
+    text-decoration: none;
 }
 
 .conta_about button a:hover,.conta_event  button a:hover{
