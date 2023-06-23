@@ -86,6 +86,7 @@
     font-weight: bold;
     transition: 0.5s;
     text-decoration: none;
+    color: black;
 }
 
 .conta_about button a:hover,.conta_event  button a:hover{
@@ -210,7 +211,7 @@
     color: white;
     padding: 10px 40px;
     font-weight: bold;
-    
+    text-decoration: none;
 }
 
 .container_gallery button:hover{
